@@ -9,7 +9,7 @@
 
 <header>
   <nav>
-    <a href="{base}/" class:active={$page.url.pathname === "/"}>1</a>
+    <a href="{base}/" class:active={$page.url.pathname === "/"}>TEST</a>
   </nav>
 </header>
 
