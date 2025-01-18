@@ -1,4 +1,5 @@
 <script>
+  import { page } from "$app/stores";
   import { base } from "$app/paths";
 </script>
 
@@ -6,7 +7,11 @@
   <title>ENDANGERED RECIPES</title>
 </svelte:head>
 
-<header></header>
+<header>
+  <nav>
+    <a href="{base}/" class:active={$page.url.pathname === "/"}>1</a>
+  </nav>
+</header>
 
 <main>
   <slot />
