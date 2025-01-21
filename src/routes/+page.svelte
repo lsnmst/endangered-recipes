@@ -1,5 +1,6 @@
 <script>
     import { base } from "$app/paths";
+    import { page } from "$app/stores";
     import Scroller from "@sveltejs/svelte-scroller";
 
     let top = 0.1;
@@ -35,15 +36,32 @@
     personal relationship and that of their community with the ancestral land.
     Using their Indigenous knowledge, they selected ingredients treasured in
     their memory that symbolise their struggle to defend the land, Indigenous
-    and women's rights. Precious, who documented the ENTURIRE recipe, allows us
-    to realise how the recipes were documented:
+    and women's rights. <span class="highl"
+        >Precious is an Ugandan ecofeminist and journalist, who documented for
+        ENDANGERED RECIPES a recipe which is called ENTURIRE in her native
+        language. Below you can access the recipe in order to learn how
+        ENDANGERED RECIPES documents the recipes included in its archive.</span
+    >
 </h1>
 
 <div class="recipe" style="padding: 0 0 1em 0">
     <div class="recipe-title">
-        <div style="">
-            <p style="color:#ec73e8; font-weight:bold">PRECIOUS NATURINDA</p>
-            <h1>ENTURIRE</h1>
+        <div>
+            <p
+                style="color:#ec73e8; font-weight:bold; margin-block-start: 0.2em !important; margin-block-end: 0.2em !important;"
+            >
+                PRECIOUS NATURINDA
+            </p>
+            <h1
+                style="margin-block-start: 0.2em !important; margin-block-end: 0.2em !important;"
+            >
+                ENTURIRE
+            </h1>
+            <p
+                style="font-size: 0.8em;margin-block-start: 0.2em !important; margin-block-end: 0.8em !important;"
+            >
+                Serves 5 people
+            </p>
         </div>
         <div style="display:flex;flex-direction:row">
             <div
@@ -72,9 +90,55 @@
     <div class="step">
         <Scroller {top} {threshold} {bottom}>
             <div slot="foreground" style="padding: 0 0 0 60%;">
-                <section>Ingredients</section>
-                <section>Preparations</section>
-                <section>Results</section>
+                <section>
+                    <div
+                        class="box-labels"
+                        style="display: flex; flex-direction:row; margin-bottom:2em; justify-content: center;"
+                    >
+                        <div class="ingredients">
+                            <img src="{base}/enturire/seed.png" alt="" />DRIED
+                            SORGHUM
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div
+                        class="box-labels"
+                        style="display: flex; flex-direction:row; margin-bottom:2em; justify-content: center;"
+                    >
+                        <div class="preparations">
+                            <img src="{base}/enturire/time.png" alt="" />12 h
+                            <img
+                                src="{base}/enturire/soaking.png"
+                                alt=""
+                            />Soaking
+                        </div>
+                        <div class="preparations">
+                            <img src="{base}/enturire/time.png" alt="" />72-96 h
+                            <img
+                                src="{base}/enturire/fermenting.png"
+                                alt=""
+                            />Fermenting
+                        </div>
+                        <div class="preparations">
+                            <img
+                                src="{base}/enturire/grinding.png"
+                                alt=""
+                            />Grinding
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div
+                        class="box-labels"
+                        style="display: flex; flex-direction:row; margin-bottom:2em; justify-content: center;"
+                    >
+                        <div class="ingredients">
+                            <img src="{base}/enturire/endiiro.png" alt="" />3
+                            medium <i>Endiiro</i> basket<br />sorghum flour
+                        </div>
+                    </div>
+                </section>
             </div>
 
             <div slot="background">
@@ -94,9 +158,60 @@
     <div class="step">
         <Scroller {top} {threshold} {bottom}>
             <div slot="foreground" style="padding: 0 0 0 60%;">
-                <section>Ingredients</section>
-                <section>Preparations</section>
-                <section>Results</section>
+                <section>
+                    <div
+                        class="box-labels"
+                        style="display: flex; flex-direction:row; margin-bottom:2em; justify-content: center;"
+                    >
+                        <div class="ingredients">
+                            <img src="{base}/enturire/endiiro.png" alt="" />3
+                            medium <i>Endiiro</i> basket<br />sorghum flour
+                        </div>
+                        <div class="ingredients">
+                            <img src="{base}/enturire/water.png" alt="" />15
+                            litre<br />water jerrycan
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div
+                        class="box-labels"
+                        style="display: flex; flex-direction:row; margin-bottom:2em; justify-content: center;"
+                    >
+                        <div class="preparations">
+                            <img
+                                src="{base}/enturire/boiling.png"
+                                alt=""
+                            />Boiling
+                        </div>
+                        <div class="preparations">
+                            <img
+                                src="{base}/enturire/mixing.png"
+                                alt=""
+                            />Mixing
+                        </div>
+                        <div class="preparations">
+                            <img src="{base}/enturire/time.png" alt="" />72-96 h
+                            <img
+                                src="{base}/enturire/resting.png"
+                                alt=""
+                            />Resting
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div
+                        class="box-labels"
+                        style="display: flex; flex-direction:row; margin-bottom:2em; justify-content: center;"
+                    >
+                        <div class="ingredients">
+                            <img
+                                src="{base}/enturire/step3.png"
+                                alt=""
+                            />Mixture of<br />sorghum flour
+                        </div>
+                    </div>
+                </section>
             </div>
 
             <div slot="background">
@@ -122,9 +237,55 @@
     <div class="step">
         <Scroller {top} {threshold} {bottom}>
             <div slot="foreground" style="padding: 0 0 0 60%;">
-                <section>Ingredients</section>
-                <section>Preparations</section>
-                <section>Results</section>
+                <section>
+                    <div
+                        class="box-labels"
+                        style="display: flex; flex-direction:row; margin-bottom:2em; justify-content: center;"
+                    >
+                        <div class="ingredients">
+                            <img
+                                src="{base}/enturire/step3.png"
+                                alt=""
+                            />Mixture of<br />sorghum flour
+                        </div>
+                        <div class="ingredients">
+                            <img src="{base}/enturire/honey.png" alt="" />1 cup<br
+                            />honey
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div
+                        class="box-labels"
+                        style="display: flex; flex-direction:row; margin-bottom:2em; justify-content: center;"
+                    >
+                        <div class="preparations">
+                            <img
+                                src="{base}/enturire/mixing.png"
+                                alt=""
+                            />Mixing
+                        </div>
+                        <div class="preparations">
+                            <img src="{base}/enturire/time.png" alt="" />24 h
+                            <img
+                                src="{base}/enturire/resting.png"
+                                alt=""
+                            />Resting
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div
+                        class="box-labels"
+                        style="display: flex; flex-direction:row; margin-bottom:2em; justify-content: center;"
+                    >
+                        <div class="ingredients">
+                            <img src="{base}/enturire/final.png" alt="" /><b
+                                >ENTURIRE</b
+                            >
+                        </div>
+                    </div>
+                </section>
             </div>
 
             <div slot="background">
@@ -155,37 +316,24 @@
     class="box-labels"
     style="display: flex; flex-direction:row; margin-bottom:2em; justify-content: center;"
 >
-    <div style="display: flex; flex-direction:column; text-align: center;">
-        <img
-            src="{base}/seed/LC.png"
-            style="width: 20vw; max-width:200px; border: 1px solid #ec73e8; border-top-right-radius: 25px; margin:1em;"
-            alt="Least concerned recipe label"
-        />LEAST CONCERNED
+    <div class="labels">
+        <img src="{base}/seed/LC.png" alt="Least concerned recipe label" />LEAST
+        CONCERNED
     </div>
-    <div style="display: flex; flex-direction:column; text-align: center;">
-        <img
-            src="{base}/seed/VU.png"
-            style="width: 20vw; max-width:200px; border: 4px solid #ec73e8; border-top-right-radius: 25px; margin:1em;"
-            alt="Vulnerable recipe label"
-        /><b>VULNERABLE</b>
+    <div class="labels">
+        <img src="{base}/seed/VU.png" alt="Vulnerable recipe label" /><b
+            >VULNERABLE</b
+        >
     </div>
-    <div style="display: flex; flex-direction:column; text-align: center;">
-        <img
-            src="{base}/seed/EN.png"
-            style="width: 20vw; max-width:200px; border: 1px solid #ec73e8; border-top-right-radius: 25px; margin:1em;"
-            alt="Endangered recipe label"
-        />ENDANGERED
+    <div class="labels">
+        <img src="{base}/seed/EN.png" alt="Endangered recipe label" />ENDANGERED
     </div>
-    <div style="display: flex; flex-direction:column; text-align: center;">
-        <img
-            src="{base}/seed/EX.png"
-            style="width: 20vw; max-width:200px; border: 1px solid #ec73e8; border-top-right-radius: 25px; margin:1em;"
-            alt="Extinct recipe logo"
-        />EXTINCT
+    <div class="labels">
+        <img src="{base}/seed/EX.png" alt="Extinct recipe logo" />EXTINCT
     </div>
 </div>
 
-<div style="min-height:80vh">
+<div style="min-height:60vh">
     <div
         class="recipe-info hover"
         style="margin-block-start: 0.1em !important; margin-block-end: 0.1em !important; width:98vw; font-size:1.2em;margin: auto;"
@@ -220,7 +368,7 @@
     </div>
 </div>
 
-<div style="min-height:80vh;border-bottom: 1px rgb(236, 115, 232) solid;">
+<div style="min-height:80vh;">
     <h1 style="font-size: 1.5em; width:80vw; margin-bottom:2em">
         Finally, she explained what this recipe represents to her and why it is
         important to preserve it to ensure food sovereignty
@@ -260,12 +408,28 @@
             to transfer knowledge to the young generation.
         </p>
     </div>
+    <h1 class="highl" style="font-size: 1.5em; width:80vw; margin-top:2em; margin-bottom:2em">
+        In ENDANGERED RECIPES you can find Precious's recipe and those of other
+        women, Indigenous and ecofeminists, finding out if the recipes are
+        endangered, relying on your cooperation to prevent it.
+    </h1>
 </div>
 
 <div class="outro">
     <h1>
-        To support and participate in the project, grow the recipe collection or
-        enquire, please get in touch.
+        The ENDANGERED RECIPES initiative aims at publishing collections of
+        recipes <a
+            href="{base}/case"
+            class:active={$page.url.pathname === "/case"}
+            >from geographical areas</a
+        >
+        where dynamics of intensification of resource extraction, violation of Indigenous,
+        women and land rights, climate change, and politics resulting in the loss
+        of food sovereignty are recorded.<br />To support and participate in the
+        project, grow the recipe collection or enquire, please
+        <a href="https://ee-eu.kobotoolbox.org/x/NnTXpIEA" target="_blank"
+            >get in touch</a
+        >.
     </h1>
 </div>
 
@@ -277,6 +441,10 @@
     }
     .outro {
         min-height: 40vh;
+        border: 5px rgb(236, 115, 232) solid;
+        border-top-left-radius: 25px;
+        color: #000000;
+        padding: 1em;
     }
     .precious {
         background-color: #f3e1ee;
@@ -342,6 +510,50 @@
         margin-block-end: 0.1em !important;
     }
 
+    .labels {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .labels img {
+        width: 20vw;
+        max-width: 200px;
+        border: 1px solid #ec73e8;
+        border-top-right-radius: 25px;
+        margin: 1em;
+    }
+
+    .ingredients {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        border: 1px solid #ec73e8;
+        border-bottom-left-radius: 25px;
+        padding: 0.25em;
+    }
+
+    .ingredients img {
+        width: 15vw;
+        max-width: 150px;
+        margin: 0.5em;
+    }
+
+    .preparations {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        border: 1px solid #ec73e8;
+        border-bottom-left-radius: 25px;
+        padding: 0.2em;
+    }
+
+    .preparations img {
+        width: 8vw;
+        max-width: 100px;
+        margin: 0.3em;
+    }
+
     .highl {
         color: #ec73e8;
         font-weight: 500;
@@ -353,6 +565,14 @@
         }
         .box-labels img {
             margin: auto !important;
+        }
+
+        section {
+            padding: 0.25em;
+            font-size: 0.8em !important;
+        }
+        [slot="background"] {
+            font-size: 1.1em !important;
         }
     }
 </style>
