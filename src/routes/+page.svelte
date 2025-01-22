@@ -31,16 +31,8 @@
 </div>
 
 <h1 style="font-size: 1.5em; width:80vw; margin-bottom:2em">
-    The recipes are autonomously documented by the authoresses to explain their
-    personal relationship and that of their community with the ancestral land.
-    Using their Indigenous knowledge, they selected ingredients treasured in
-    their memory that symbolise their struggle to defend the land, Indigenous
-    and women's rights. <span class="highl"
-        >Precious is an Ugandan ecofeminist and journalist, who documented for
-        ENDANGERED RECIPES a recipe which is called ENTURIRE in her native
-        language. Below you can access the recipe in order to learn how
-        ENDANGERED RECIPES documents the recipes included in its archive.</span
-    >
+    {$_("intro_precious")}
+    <span class="highl">{$_("intro_precious_span")}</span>
 </h1>
 
 <div class="recipe" style="padding: 0 0 1em 0">
@@ -59,7 +51,7 @@
             <p
                 style="font-size: 0.8em;margin-block-start: 0.2em !important; margin-block-end: 0.8em !important;"
             >
-                Serves 5 people
+                {$_("recipe_serve")}
             </p>
         </div>
         <div style="display:flex;flex-direction:row">
@@ -67,9 +59,9 @@
                 class="recipe-info"
                 style="margin-block-start: 0.1em !important; margin-block-end: 0.1em !important;"
             >
-                <p>Indigeneity</p>
+                <p>{$_("recipe_indig")}</p>
                 <h3>BAGIKA PEOPLE</h3>
-                <p>Native language</p>
+                <p>{$_("recipe_lang")}</p>
                 <h3>RUKIGA</h3>
             </div>
             <div
@@ -95,8 +87,9 @@
                         style="display: flex; flex-direction:row; margin-bottom:2em; justify-content: center;"
                     >
                         <div class="ingredients">
-                            <img src="{base}/enturire/seed.png" alt="" />DRIED
-                            SORGHUM
+                            <img src="{base}/enturire/seed.png" alt="" />{$_(
+                                "dried_sorghum",
+                            )}
                         </div>
                     </div>
                 </section>
@@ -107,23 +100,22 @@
                     >
                         <div class="preparations">
                             <img src="{base}/enturire/time.png" alt="" />12 h
-                            <img
-                                src="{base}/enturire/soaking.png"
-                                alt=""
-                            />Soaking
+                            <img src="{base}/enturire/soaking.png" alt="" />{$_(
+                                "soaking",
+                            )}
                         </div>
                         <div class="preparations">
                             <img src="{base}/enturire/time.png" alt="" />72-96 h
                             <img
                                 src="{base}/enturire/fermenting.png"
                                 alt=""
-                            />Fermenting
+                            />{$_("fermenting")}
                         </div>
                         <div class="preparations">
                             <img
                                 src="{base}/enturire/grinding.png"
                                 alt=""
-                            />Grinding
+                            />{$_("grinding")}
                         </div>
                     </div>
                 </section>
@@ -133,8 +125,8 @@
                         style="display: flex; flex-direction:row; margin-bottom:2em; justify-content: center;"
                     >
                         <div class="ingredients">
-                            <img src="{base}/enturire/endiiro.png" alt="" />3
-                            medium <i>Endiiro</i> basket<br />sorghum flour
+                            <img src="{base}/enturire/endiiro.png" alt="" />
+                            {@html $_("endiiro")}
                         </div>
                     </div>
                 </section>
@@ -142,14 +134,7 @@
 
             <div slot="background">
                 <p>1.</p>
-                <p>
-                    Dried sorghum is soaked in water for about 12 hours. It is
-                    mixed with ash to turn black. It is then kept in the dark
-                    for about 3 to 4 days for it to ferment. This fermentation
-                    process makes the sorghum so sweet after turning black. It
-                    is then dried before it is taken to the machine for grinding
-                    to make flour.
-                </p>
+                <p>{$_("step1")}</p>
             </div>
         </Scroller>
     </div>
@@ -163,12 +148,12 @@
                         style="display: flex; flex-direction:row; margin-bottom:2em; justify-content: center;"
                     >
                         <div class="ingredients">
-                            <img src="{base}/enturire/endiiro.png" alt="" />3
-                            medium <i>Endiiro</i> basket<br />sorghum flour
+                            <img src="{base}/enturire/endiiro.png" alt="" />
+                            {@html $_("endiiro")}
                         </div>
                         <div class="ingredients">
-                            <img src="{base}/enturire/water.png" alt="" />15
-                            litre<br />water jerrycan
+                            <img src="{base}/enturire/water.png" alt="" />
+                            {@html $_("jerrycan")}
                         </div>
                     </div>
                 </section>
@@ -178,23 +163,20 @@
                         style="display: flex; flex-direction:row; margin-bottom:2em; justify-content: center;"
                     >
                         <div class="preparations">
-                            <img
-                                src="{base}/enturire/boiling.png"
-                                alt=""
-                            />Boiling
+                            <img src="{base}/enturire/boiling.png" alt="" />{$_(
+                                "boiling",
+                            )}
                         </div>
                         <div class="preparations">
-                            <img
-                                src="{base}/enturire/mixing.png"
-                                alt=""
-                            />Mixing
+                            <img src="{base}/enturire/mixing.png" alt="" />{$_(
+                                "mixing",
+                            )}
                         </div>
                         <div class="preparations">
                             <img src="{base}/enturire/time.png" alt="" />72-96 h
-                            <img
-                                src="{base}/enturire/resting.png"
-                                alt=""
-                            />Resting
+                            <img src="{base}/enturire/resting.png" alt="" />{$_(
+                                "resting",
+                            )}
                         </div>
                     </div>
                 </section>
@@ -207,7 +189,7 @@
                             <img
                                 src="{base}/enturire/step3.png"
                                 alt=""
-                            />Mixture of<br />sorghum flour
+                            />{@html $_("mixture")}
                         </div>
                     </div>
                 </section>
@@ -216,18 +198,11 @@
             <div slot="background">
                 <p>2.</p>
                 <p>
-                    In a bucket or pot, put 2 baskets of sorghum flour. Boil
-                    water and mix it flour in the bucket. Keep mixing and ensure
-                    the mixture is so thick. The flour should be much. Then add
-                    some flour on top of the mixture and leave it to cool.<br
-                    /><br />
+                    {@html $_("step2")}
                 </p>
                 <p>3.</p>
                 <p>
-                    After the mixture has coolen down, add like a 5 litre
-                    jerrycan or more of water that was boiled at first. Make
-                    sure the outcome is bot so waterly. Sorinkle some more flour
-                    on top and cover it for three to four days.
+                    {$_("step3")}
                 </p>
             </div>
         </Scroller>
@@ -245,11 +220,11 @@
                             <img
                                 src="{base}/enturire/step3.png"
                                 alt=""
-                            />Mixture of<br />sorghum flour
+                            />{@html $_("mixture")}
                         </div>
                         <div class="ingredients">
-                            <img src="{base}/enturire/honey.png" alt="" />1 cup<br
-                            />honey
+                            <img src="{base}/enturire/honey.png" alt="" />
+                            {@html $_("honey")}
                         </div>
                     </div>
                 </section>
@@ -259,17 +234,15 @@
                         style="display: flex; flex-direction:row; margin-bottom:2em; justify-content: center;"
                     >
                         <div class="preparations">
-                            <img
-                                src="{base}/enturire/mixing.png"
-                                alt=""
-                            />Mixing
+                            <img src="{base}/enturire/mixing.png" alt="" />{$_(
+                                "mixing",
+                            )}
                         </div>
                         <div class="preparations">
                             <img src="{base}/enturire/time.png" alt="" />24 h
-                            <img
-                                src="{base}/enturire/resting.png"
-                                alt=""
-                            />Resting
+                            <img src="{base}/enturire/resting.png" alt="" />{$_(
+                                "resting",
+                            )}
                         </div>
                     </div>
                 </section>
@@ -290,12 +263,7 @@
             <div slot="background">
                 <p>4.</p>
                 <p>
-                    After 4 days, another mixture of sorghoum flour mixed with
-                    warm water and honey is added. After a day, it is ready for
-                    drinking, This makes the taste so sweet but it keeps turning
-                    alcoholic depending on the number of days it stays (women
-                    prefer to take it in its initial stages while men love it
-                    then it has taken some days).
+                    {$_("step4")}
                 </p>
             </div>
         </Scroller>
@@ -303,12 +271,8 @@
 </div>
 
 <h1 style="font-size: 1.5em; width:80vw; margin-bottom:2em">
-    Through a climate memory exercise, Precious explained how climate is
-    affecting the reproduction, growth and harvesting of ingredients, and how
-    the transmission of knowledge in the practices of cooking this recipe is
-    being disrupted, defining her recipe as <span
-        style="background-color:#c7cfb750">VULNERABLE</span
-    >.
+    {$_("climate-memory")}
+    <span style="background-color:#c7cfb750">{$_("vuM")}</span>.
 </h1>
 
 <div
@@ -316,19 +280,21 @@
     style="display: flex; flex-direction:row; margin-bottom:2em; justify-content: center;"
 >
     <div class="labels">
-        <img src="{base}/seed/LC.png" alt="Least concerned recipe label" />LEAST
-        CONCERNED
+        <img src="{base}/seed/LC.png" alt="Least concerned recipe label" />{$_(
+            "lcM",
+        )}
     </div>
     <div class="labels">
         <img src="{base}/seed/VU.png" alt="Vulnerable recipe label" /><b
-            >VULNERABLE</b
+            >{$_("vuM")}</b
         >
     </div>
     <div class="labels">
-        <img src="{base}/seed/EN.png" alt="Endangered recipe label" />ENDANGERED
+        <img src="{base}/seed/EN.png" alt="Endangered recipe label" />
+        {$_("enM")}
     </div>
     <div class="labels">
-        <img src="{base}/seed/EX.png" alt="Extinct recipe logo" />EXTINCT
+        <img src="{base}/seed/EX.png" alt="Extinct recipe logo" />{$_("exM")}
     </div>
 </div>
 
@@ -337,100 +303,38 @@
         class="recipe-info hover"
         style="margin-block-start: 0.1em !important; margin-block-end: 0.1em !important; width:98vw; font-size:1.2em;margin: auto;"
     >
-        <p>
-            Due to harsh climatic weather conditions, change of seasons, soil
-            degradation due to chemical use and pests and disease, sorghum
-            growing is slowly reducing in our region and the harvests is no
-            longer bumper as it used to be. While I was growing up, my mother
-            used to harvest between 15- 20 sacks of sorghum on a good harvest.
-            As a small holder farmer, she would sell some and leave others to
-            keep the home food secure at all times. Now, I was surprised to find
-            that she harvests 1 or 3 and 5 utmost when she has exhausted all her
-            land. She told me some of the reasons for poor harvests are poor
-            rains and degraded soils that make the sorghum stunted. This is
-            causing food insecurity and this automatically heavily falls on
-            women who are traditional meant to keep homes food secure and is the
-            source of their livelihood.
-        </p>
-        <p>
-            Another issue is on knowledge sharing. The knowledge right from the
-            materials used to making the porridge is slowly disappearing.
-            Initially, the porridge used to be prepared on pots and served in
-            calabashes and gourds but now days the trend is changing to use of
-            buckets and cups. This is because people who used to make them are
-            slowly dying without transferring the knowledge to the young
-            generation. Also the baskets are made out of local grass. These were
-            mainly done by women as source of income. However, the materials are
-            slowly facing extinct and the knowledge is not being transferred to
-            the young generation.
-        </p>
+        <p>{$_("recipe_climate_a")}</p>
+        <p>{$_("recipe_climate_b")}</p>
     </div>
 </div>
 
 <div style="min-height:80vh;">
     <h1 style="font-size: 1.5em; width:80vw; margin-bottom:2em">
-        Finally, she explained what this recipe represents to her and why it is
-        important to preserve it to ensure food sovereignty
+        {$_("message")}
     </h1>
     <div
         class="recipe-info hover"
         style="margin-block-start: 0.1em !important; margin-block-end: 0.1em !important; width:98vw; font-size:1.2em"
     >
-        <p>
-            This local brown thick drink called enturire or local porridge is
-            household item for each home. To warmly welcome a visitor, he/she
-            doesn’t have to miss this drink in your home. It is important in
-            home because it keeps away hunger. When you have local porridge, you
-            may end up not eating any food because it keeps one strong. I
-            remember in our school days, my mother, who is a peasant farmer,
-            would prepare it on Sundays to take us throughout the week. Local
-            porridge would stand in a gap of a meal at lunch time whenever she
-            would have no time to cook lunch for us. Two cups were always enough
-            for each of us as lunch to enable us keep strong for the rest of the
-            day at school as we wait to prepare supper. Therefore, the porridge
-            was a big weapon to fight food insecurity in homes. It was meant to
-            keep homes food secure in times of food scarcity, local porridge
-            would stand in the gap.<br />
-            Secondly, it is a symbol of unity and love among the Bakiga tribe because
-            as long as there is local porridge in a home, a guest has to be serving
-            upon visit. At selling points, people drink together and in most cases
-            after getting satisfied, they start dancing in appreciation and unity.<br
-            />
-            I feel we are missing out on traditional knowledge sharing, sustainable
-            farming methods and indigenous seeds that used to be resistant to harsh
-            climatic conditions. Whereas many crops have been improved, at least
-            cereals are still indigenous though the introduction of modern farming
-            that requires use of chemicals and diversion from traditional methods
-            of keeping soils fertile is affecting the harvests leading to food insecurity.
-            Therefore it is important to promote sustainable methods of farming practices,
-            conserve the environment and promote intergenerational learning to share
-            to transfer knowledge to the young generation.
-        </p>
+        <p>{@html $_("precious-message")}</p>
     </div>
     <h1
         class="highl"
         style="font-size: 1.5em; width:80vw; margin-top:2em; margin-bottom:2em"
     >
-        In ENDANGERED RECIPES you can find Precious's recipe and those of other
-        women, Indigenous and ecofeminists, finding out if the recipes are
-        endangered, relying on your cooperation to prevent it.
+        {$_("preciuos_final")}
     </h1>
 </div>
 
 <div class="outro">
     <h1>
-        The ENDANGERED RECIPES initiative aims at publishing collections of
-        recipes <a
-            href="{base}/case"
-            class:active={$page.url.pathname === "/case"}
-            >from geographical areas</a
+        {@html $_("outer_a")}
+        <a href="{base}/case" class:active={$page.url.pathname === "/case"}
+            >{@html $_("outer_b")}</a
         >
-        where dynamics of intensification of resource extraction, violation of Indigenous,
-        women and land rights, climate change, and politics resulting in the loss
-        of food sovereignty are recorded.<br />To support and participate in the
-        project, grow the recipe collection or enquire, please
+        {@html $_("outer_c")}
         <a href="https://ee-eu.kobotoolbox.org/x/NnTXpIEA" target="_blank"
-            >get in touch</a
+            >{@html $_("outer_d")}</a
         >.
     </h1>
 </div>

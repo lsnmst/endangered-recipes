@@ -3,8 +3,8 @@
 }
 
 @font-face {
-  font-family: 'Karla-Regular';
-  src: url('/fonts/Karla-Regular.woff2') format('woff2');
+  font-family: 'Karla-Cedille';
+  src: url('/fonts/Cedille.woff2') format('woff2');
   font-style: normal;
   font-weight: 500;
 }
@@ -46,7 +46,7 @@ select,
 input,
 textarea {
   font-family:
-    'Karla-Regular',
+    'Karla-Cedille',
     monospace !important;
   font-size: 16px;
   color: var(--fg);

@@ -6,6 +6,8 @@
     import L from "leaflet";
     import { alur } from "./alur.js";
     import { lake } from "./lake.js";
+    import { _ } from "svelte-i18n";
+    
 
     let top = 0.1;
     let threshold = 0.5;
@@ -17,40 +19,28 @@
 
 <div class="intro">
     <h1 style="transform:{`translate3d(0, ${scroll * -0.5}px, 0)`} !important">
-        ENDANGERED RECIPES is a collection of recipes shared <span class="highl"
-            >by women, Indigenous and ecofeminists</span
-        >, custodians of seeds, forests and water, spiritual and cultural
-        leaders, whose territories are threatened by
-        <span class="highl"
-            >extractivism, climate change and cultural + memory annihilation</span
-        >
-        . Classified on a scale from
-        <span style="background-color:#55717450">least concerned</span>,
-        <span style="background-color:#9dad7f50">vulnerable</span>,
-        <span style="background-color:#c7cfb750">endangered</span>
-        to <span style="background-color:#f7f7e890">extinct</span>, recipes are
-        documented to preserve or rehabilitate
-        <span class="highl">food sovereignty</span>
-        and knowledge transmission of food culture.
+        {$_("intro_message")}<span class="highl"
+            >{$_("intro_message_span_a")}</span
+        >{$_("intro_message_a")}
+        <span class="highl">{$_("intro_message_span_b")}</span>
+        {$_("intro_message_b")}
+        <span style="background-color:#55717450">{$_("lc")}</span>,
+        <span style="background-color:#9dad7f50">{$_("vu")}</span>,
+        <span style="background-color:#c7cfb750">{$_("en")}</span>
+        {$_("to")}
+        <span style="background-color:#f7f7e890">{$_("ex")}</span>
+        {$_("intro_message_c")}
+        <span class="highl">{$_("intro_message_span_c")}</span>
+        {$_("intro_message_d")}
     </h1>
 </div>
 
-<h1>CASE STUDIES</h1>
+<h1>{$_("caseM")}</h1>
 
 <div class="recipe-title">
-    <h1 class="highl">ALUR PEOPLE OF THE MAHAGI TERRITORY</h1>
-    <p>
-        A chronically harassed territory ravaged by terrorist militia violence,
-        where illegal mining and uncontrolled extraction of forest resources are
-        eroding the ancient primary forests of the Congo Basin. The Alur women
-        have organised to save their recipes in defence of their culture and
-        food sovereignty, as part of their non-violent actions for lasting
-        peace.
-    </p>
-    <p class="highl">
-        Coming soon, you will be able to find all publications posted on this
-        page.
-    </p>
+    <h1 class="highl">{$_("alur")}</h1>
+    <p>{$_("alur_descr")}</p>
+    <p class="highl">{$_("coming_soon")}</p>
 
     <div style="width: 100%;height: 500px;">
         <Map
@@ -86,26 +76,9 @@
 </div>
 
 <div class="recipe-title">
-    <h1 class="highl">LAKES OF THE ALBERTINE RIFT</h1>
-    <p>
-        A lacustrine region with an enormous ecological and ethno-linguistic
-        diversity, known for its abundance of resources that attract colonialist
-        forces from all over, occupying the mountains and waters, exploiting and
-        ravishing the population. A region that has been in a fraticidal war for
-        power and influence for decades, sparked by land conflicts and identity
-        conflicts. A region where women are stolen, raped, and killed at
-        fountains while collecting water, and where women suffer the most from
-        limited access to forest resources imposed by fortress conservation or
-        the degredation of ecosystems. The women from the Albertine Rift
-        collected their recipes to rebuild the identity they had lost over the
-        past 30 years as internally displaced persons as a result of the war
-        that had reached the heart of the Congo Basin, exercising their memory
-        with hope and demanding lasting peace.
-    </p>
-    <p class="highl">
-        Coming soon, you will be able to find all publications posted on this
-        page.
-    </p>
+    <h1 class="highl">{$_("rift")}</h1>
+    <p>{$_("rift_descr")}</p>
+    <p class="highl">{$_("coming_soon")}</p>
 
     <div style="width: 100%;height: 500px;">
         <Map
@@ -142,18 +115,13 @@
 
 <div class="outro">
     <h1>
-        The ENDANGERED RECIPES initiative aims at publishing collections of
-        recipes <a
-            href="{base}/case"
-            class:active={$page.url.pathname === "/case"}
-            >from geographical areas</a
+        {@html $_("outer_a")}
+        <a href="{base}/case" class:active={$page.url.pathname === "/case"}
+            >{@html $_("outer_b")}</a
         >
-        where dynamics of intensification of resource extraction, violation of Indigenous,
-        women and land rights, climate change, and politics resulting in the loss
-        of food sovereignty are recorded.<br />To support and participate in the
-        project, grow the recipe collection or enquire, please
+        {@html $_("outer_c")}
         <a href="https://ee-eu.kobotoolbox.org/x/NnTXpIEA" target="_blank"
-            >get in touch</a
+            >{@html $_("outer_d")}</a
         >.
     </h1>
 </div>

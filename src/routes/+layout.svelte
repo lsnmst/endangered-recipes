@@ -6,6 +6,7 @@
     register,
     isLoading,
     t,
+    _,
     init,
     getLocaleFromNavigator,
     locale,
@@ -18,7 +19,7 @@
 </script>
 
 <svelte:head>
-  <title>ENDANGERED RECIPES</title>
+  <title>{$_("title")}</title>
 </svelte:head>
 
 <header>
@@ -26,20 +27,21 @@
     ><img src="{base}/logo.png" alt="Endangered recipes logo" /></a
   >
   <nav>
-    <a href="{base}/" class:active={$page.url.pathname === "/"}
-      >ENDANGERED RECIPES</a
+    <a href="{base}/" class:active={$page.url.pathname === "/"}>{$_("title")}</a
     >
     <a href="{base}/case" class:active={$page.url.pathname === "/case"}
-      >Case studies</a
+      >{$_("title_coll")}</a
     >
   </nav>
-  <!--
+
+  <!--   
   <select bind:value={$locale}>
     {#each $locales as locale}
       <option value={locale}>{locale}</option>
     {/each}
   </select>
  -->
+  
 </header>
 
 {#if $isLoading}
