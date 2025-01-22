@@ -2,6 +2,18 @@
   import "./styles.css";
   import { page } from "$app/stores";
   import { base } from "$app/paths";
+  import {
+    register,
+    isLoading,
+    t,
+    init,
+    getLocaleFromNavigator,
+    locale,
+    locales,
+  } from "svelte-i18n";
+
+  register("en", () => import("../locales/en.json"));
+  init({ initialLocale: getLocaleFromNavigator(), fallbackLocale: "en" });
 </script>
 
 <svelte:head>
@@ -20,8 +32,18 @@
       >Case studies</a
     >
   </nav>
+  <!--   <select bind:value={$locale}>
+    {#each $locales as locale}
+      <option value={locale}>{locale}</option>
+    {/each}
+  </select>
+ -->
 </header>
 
-<main>
-  <slot />
-</main>
+{#if $isLoading}
+  Please wait...
+{:else}
+  <main>
+    <slot />
+  </main>
+{/if}

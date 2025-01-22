@@ -2,6 +2,7 @@
     import { base } from "$app/paths";
     import { page } from "$app/stores";
     import Scroller from "@sveltejs/svelte-scroller";
+    import { _ } from "svelte-i18n";
 
     let top = 0.1;
     let threshold = 0.5;
@@ -13,10 +14,10 @@
 
 <div class="intro">
     <h1 style="transform:{`translate3d(0, ${scroll * -0.5}px, 0)`} !important">
-        ENDANGERED RECIPES is a collection of recipes shared <span class="highl"
-            >by women, Indigenous and ecofeminists</span
-        >, custodians of seeds, forests and water, spiritual and cultural
-        leaders, whose territories are threatened by
+        {$_("intro_message")}
+        <span class="highl">by women, Indigenous and ecofeminists</span>,
+        custodians of seeds, forests and water, spiritual and cultural leaders,
+        whose territories are threatened by
         <span class="highl"
             >extractivism, climate change and cultural + memory annihilation</span
         >
@@ -408,7 +409,10 @@
             to transfer knowledge to the young generation.
         </p>
     </div>
-    <h1 class="highl" style="font-size: 1.5em; width:80vw; margin-top:2em; margin-bottom:2em">
+    <h1
+        class="highl"
+        style="font-size: 1.5em; width:80vw; margin-top:2em; margin-bottom:2em"
+    >
         In ENDANGERED RECIPES you can find Precious's recipe and those of other
         women, Indigenous and ecofeminists, finding out if the recipes are
         endangered, relying on your cooperation to prevent it.
