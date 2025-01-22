@@ -1,3 +1,15 @@
 {
-    "intro_message": "ENDANGERED RECIPES is a collection of recipes shared"
+    "intro_message": "ENDANGERED RECIPES is a collection of recipes shared ",
+    "intro_message_span_a": "by women, Indigenous and ecofeminists",
+    "intro_message_a": ", custodians of seeds, forests and water, spiritual and cultural leaders, whose territories are threatened by",
+    "intro_message_span_b": "extractivism, climate change and cultural + memory annihilation",
+    "intro_message_b":". Classified on a scale from",
+    "lc": "least concerned",
+    "vu": "vulnerable",
+    "en": "endangered",
+    "ex":"extinct",
+    "to":"to",
+    "intro_message_c":", recipes are documented to preserve or rehabilitate",
+    "intro_message_span_c":"food sovereignty",
+    "intro_message_d":"and knowledge transmission of food culture."
 }

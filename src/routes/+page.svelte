@@ -14,21 +14,19 @@
 
 <div class="intro">
     <h1 style="transform:{`translate3d(0, ${scroll * -0.5}px, 0)`} !important">
-        {$_("intro_message")}
-        <span class="highl">by women, Indigenous and ecofeminists</span>,
-        custodians of seeds, forests and water, spiritual and cultural leaders,
-        whose territories are threatened by
-        <span class="highl"
-            >extractivism, climate change and cultural + memory annihilation</span
-        >
-        . Classified on a scale from
-        <span style="background-color:#55717450">least concerned</span>,
-        <span style="background-color:#9dad7f50">vulnerable</span>,
-        <span style="background-color:#c7cfb750">endangered</span>
-        to <span style="background-color:#f7f7e890">extinct</span>, recipes are
-        documented to preserve or rehabilitate
-        <span class="highl">food sovereignty</span>
-        and knowledge transmission of food culture.
+        {$_("intro_message")}<span class="highl"
+            >{$_("intro_message_span_a")}</span
+        >{$_("intro_message_a")}
+        <span class="highl">{$_("intro_message_span_b")}</span>
+        {$_("intro_message_b")}
+        <span style="background-color:#55717450">{$_("lc")}</span>,
+        <span style="background-color:#9dad7f50">{$_("vu")}</span>,
+        <span style="background-color:#c7cfb750">{$_("en")}</span>
+        {$_("to")}
+        <span style="background-color:#f7f7e890">{$_("ex")}</span>
+        {$_("intro_message_c")}
+        <span class="highl">{$_("intro_message_span_c")}</span>
+        {$_("intro_message_d")}
     </h1>
 </div>
 

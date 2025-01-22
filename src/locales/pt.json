@@ -1,3 +1,15 @@
 {
-    "intro_message": "ENDANGERED RECIPES é uma coleção de receitas compartilhadas"
+    "intro_message": "ENDANGERED RECIPES é uma coleção de receitas compartilhadas ",
+    "intro_message_span_a": "por mulheres, indígenas e ecofeministas",
+    "intro_message_a": ", guardiãs de sementes, das florestas e das águas, líderes espirituais e culturais, cujos territórios estão ameaçados",
+    "intro_message_span_b": "pelo extrativismo, pelas mudanças climáticas e pela destruição da cultura e da memória",
+    "intro_message_b": ". Classificadas em uma escala que vai de",
+    "lc": "menos preocupante",
+    "vu": "vulnerável",
+    "en": "ameaçada",
+    "ex": "extinta",
+    "to": "a",
+    "intro_message_c": ", as receitas são documentadas para preservar ou reabilitar a",
+    "intro_message_span_c": "soberania alimentar",
+    "intro_message_d": "a transmissão de conhecimento sobre cultura alimentar."
 }
