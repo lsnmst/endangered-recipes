@@ -13,7 +13,9 @@
   } from "svelte-i18n";
 
   register("en", () => import("../locales/en.json"));
+  register("pt", () => import("../locales/pt.json"));
   init({ initialLocale: getLocaleFromNavigator(), fallbackLocale: "en" });
+  locale.set('en')
 </script>
 
 <svelte:head>
@@ -32,12 +34,11 @@
       >Case studies</a
     >
   </nav>
-  <!--   <select bind:value={$locale}>
+  <select bind:value={$locale}>
     {#each $locales as locale}
       <option value={locale}>{locale}</option>
     {/each}
   </select>
- -->
 </header>
 
 {#if $isLoading}
