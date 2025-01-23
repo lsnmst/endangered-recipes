@@ -14,6 +14,7 @@
 
   register("en", () => import("../locales/en.json"));
   register("pt", () => import("../locales/pt.json"));
+  register("fr", () => import("../locales/fr.json"));
   init({ initialLocale: getLocaleFromNavigator(), fallbackLocale: "en" });
 </script>
 
@@ -33,13 +34,15 @@
       >COLLECTIONS</a
     >
   </nav>
-  
-<!--   <select bind:value={$locale}>
+
+  <!--
+   <select bind:value={$locale}>
     {#each $locales as locale}
       <option value={locale}>{locale}</option>
     {/each}
-  </select> -->
-
+  </select> 
+  -->
+  
 </header>
 
 {#if $isLoading}
