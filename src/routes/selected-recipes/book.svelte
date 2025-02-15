@@ -12,13 +12,13 @@
 <section class="book" transition:scale={{ duration: 1000, easing: expoInOut }}>
     <section class="book-top-info">
         <figure class="bkcont">
-            <img src={image} alt={title} class="bkcover" />
+            <!-- <img src={image} alt={title} class="bkcover" /> -->
             <div class="language">Language: {language} ({country})</div>
             <div class="title">{title}</div>
             <div class="buy-options-cont">
                 <a href={pdfLink}
                     ><button class="p-book-btn pdf-btn"
-                        >OPEN</button
+                        >COMING SOON</button
                     ></a
                 >
             </div>
