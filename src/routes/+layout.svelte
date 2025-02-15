@@ -31,19 +31,24 @@
     <a href="{base}/" class:active={$page.url.pathname === "/"}
       >ENDANGERED RECIPES</a
     >
+    <a
+      href="{base}/selected-recipes"
+      class:active={$page.url.pathname === "/selected-recipes"}
+      >SELECTED RECIPES</a
+    >
     <a href="{base}/case" class:active={$page.url.pathname === "/case"}
       >COLLECTIONS</a
     >
   </nav>
 
-<!--   
+  <!--   
    <select bind:value={$locale}>
     {#each $locales as locale}
       <option value={locale}>{locale}</option>
     {/each}
   </select> 
  
- -->  
+ -->
 </header>
 
 {#if $isLoading}
@@ -53,3 +58,12 @@
     <slot />
   </main>
 {/if}
+
+<style>
+  @media (max-width: 768px) {
+    nav {
+      display: grid;
+      margin: 10px;
+    }
+  }
+</style>
