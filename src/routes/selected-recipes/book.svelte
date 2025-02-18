@@ -17,9 +17,7 @@
             <div class="title">{title}</div>
             <div class="buy-options-cont">
                 <a href={pdfLink} target="_blank"
-                    ><button class="p-book-btn pdf-btn"
-                        >OPEN</button
-                    ></a
+                    ><button class="p-book-btn pdf-btn">OPEN</button></a
                 >
             </div>
         </figure>
@@ -105,5 +103,4 @@
             width: 100% !important;
         }
     }
-
 </style>
