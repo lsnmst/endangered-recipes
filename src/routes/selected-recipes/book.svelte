@@ -12,13 +12,13 @@
 <section class="book" transition:scale={{ duration: 1000, easing: expoInOut }}>
     <section class="book-top-info">
         <figure class="bkcont">
-            <!-- <img src={image} alt={title} class="bkcover" /> -->
+            <img src={image} alt={title} class="bkcover" />
             <div class="language">Language: {language} ({country})</div>
             <div class="title">{title}</div>
             <div class="buy-options-cont">
-                <a href={pdfLink}
+                <a href={pdfLink} target="_blank"
                     ><button class="p-book-btn pdf-btn"
-                        >COMING SOON</button
+                        >OPEN</button
                     ></a
                 >
             </div>
@@ -52,7 +52,6 @@
         width: 250px;
         height: 250px;
         margin-bottom: 5px;
-        box-shadow: 0 0 3px gray;
     }
 
     div.language {
