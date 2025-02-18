@@ -23,7 +23,7 @@
     onMount(() => getLanguages());
 
     let ends = [];
-    let selectedEnd = ""; 
+    let selectedEnd = "";
 
     const getEnds = () => {
         for (let bookObj of bookData) {
@@ -34,7 +34,6 @@
         ends = ends.sort();
     };
     onMount(() => getEnds());
-
 
     // Query results
     let filteredBooks = [];
@@ -65,7 +64,6 @@
             (book) => book.end === selectedEnd,
         ));
     };
-
 
     // For Search Input
     let searchTerm = "";
@@ -106,13 +104,13 @@
     </h1>
 </div>
 
-<h5>*The SELECTED RECIPES section is currently published exclusively in English</h5>
+<h5>
+    *The SELECTED RECIPES section is currently published exclusively in English
+</h5>
 
-<section id="query-section"><h3 style="margin: 0 10px 0 0;">FILTER RECIPES</h3>
-    <Menu 
-    {ends} bind:selectedEnd
-    {languages} bind:selectedLang 
-    />
+<section id="query-section">
+    <h3 style="margin: 0 10px 0 0;">FILTER RECIPES</h3>
+    <Menu {ends} bind:selectedEnd {languages} bind:selectedLang />
     <!-- <Search bind:searchTerm on:input={searchBooks} /> -->
 </section>
 
@@ -120,26 +118,12 @@
     {#if searchTerm && filteredBooks.length === 0}
         <NoResults />
     {:else if filteredBooks.length > 0}
-        {#each filteredBooks as { title, image, language, country, end, pdfLink}}
-            <Book
-                {title}
-                {image}
-                {language}
-                {country}
-                {end}
-                {pdfLink}
-            />
+        {#each filteredBooks as { title, image, language, country, end, pdfLink }}
+            <Book {title} {image} {language} {country} {end} {pdfLink} />
         {/each}
     {:else}
-        {#each bookData as { title, image, language, country, end, pdfLink}}
-            <Book
-                {title}
-                {image}
-                {language}
-                {country}
-                {end}
-                {pdfLink}
-            />
+        {#each bookData as { title, image, language, country, end, pdfLink }}
+            <Book {title} {image} {language} {country} {end} {pdfLink} />
         {/each}
     {/if}
 </main>
