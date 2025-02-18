@@ -1,6 +1,6 @@
 export const bookData = [
     {
-        "image": "http://alessandromusetta.com/cloud/endangered-recipes/eseesa_cover.png",
+        "image": "https://alessandromusetta.com/cloud/endangered-recipes/eseesa_cover.png",
         "title": "Eseesa soup",
         "language": "Izzi",
         "country": "Nigeria",
@@ -8,7 +8,7 @@ export const bookData = [
         "pdfLink": "https://www.alessandromusetta.com/cloud/endangered-recipes/eseesa-soup__pub.pdf",
     },
     {
-        "image": "http://alessandromusetta.com/cloud/endangered-recipes/magira-ga-ndema_cover.png",
+        "image": "https://alessandromusetta.com/cloud/endangered-recipes/magira-ga-ndema_cover.png",
         "title": "Magira ga Ndema",
         "language": "Lugungu",
         "country": "Uganda",
@@ -16,7 +16,7 @@ export const bookData = [
         "pdfLink": "https://www.alessandromusetta.com/cloud/endangered-recipes/magira-ga-ndema__pub.pdf",
     },
     {
-        "image": "http://alessandromusetta.com/cloud/endangered-recipes/enturire_cover.png",
+        "image": "https://alessandromusetta.com/cloud/endangered-recipes/enturire_cover.png",
         "title": "Enturire",
         "language": "Rukiga",
         "country": "Uganda",
