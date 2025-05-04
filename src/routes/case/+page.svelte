@@ -185,5 +185,13 @@
     }
 
     @media (max-width: 768px) {
+        .collection-box {
+            max-width: 100%;
+            flex-direction: column;
+        }
+        .recipe-title {
+            min-width: 90%;
+            max-height: 45em;
+        }
     }
 </style>
