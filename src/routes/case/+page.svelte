@@ -119,6 +119,7 @@
 <h5>{$_("caseExt_descr")}</h5>
 
 
+
 <div class="collection-box">
     <div class="recipe-title">
         <p style="font-size: 0.85em;">⦿ COLOMBIA</p>
@@ -133,6 +134,7 @@
         <p class="highl">{@html $_("quintal_link")}</p>
     </div>
 </div>
+
 
 
 <div class="outro">
