@@ -48,10 +48,18 @@
     "outer_b": "zones géographiques",
     "outer_c": "où sont enregistrées des dynamiques d'intensification de l'extraction des ressources, de violation des droits des peuples autochtones, des femmes et des droits fonciers, de changement climatique et de politiques entraînant la perte de la souveraineté alimentaire. Pour soutenir et participer au projet, enrichir la collection de recettes ou poser des questions, veuillez",
     "outer_d": "prendre contact ",
-    "caseM": "COLLECTIONS",
+    "caseM": "COLLECTIONS DU RÉSEAU",
+    "coming_soon": "Bientôt, vous pourrez trouver toutes les publications disponibles sur cette page.",
+    "caseExt": "RECOMENDAÇÕES DE ✨ COLEÇÕES ESPALHADAS POR TODO O PLANETA",
+    "caseExt_descr":"* Ces collections n'utilisent pas le cadre de ENDANGERED RECIPES",
     "alur": "PEUPLE ALUR DU TERRITOIRE DE MAHAGI",
     "alur_descr": "Un territoire chroniquement tourmenté, ravagé par la violence des milices terroristes, où l'exploitation minière illégale et l'extraction incontrôlée des ressources forestières érodent les anciennes forêts primaires du bassin du Congo. Les femmes Alur se sont organisées pour sauver leurs recettes afin de défendre leur culture et leur souveraineté alimentaire, dans le cadre de leurs actions non violentes pour une paix durable.",
     "rift": "LES LACS DU RIFT ALBERTIN",
     "rift_descr": "Une région lacustre d'une grande diversité écologique et ethnolinguistique, connue pour l'abondance de ses ressources, qui attire des forces colonialistes venues de partout, occupant les montagnes et les eaux, exploitant et ravageant la population. Une région qui, depuis des décennies, est en proie à une guerre fratricide pour le pouvoir et l'influence, déclenchée par des conflits fonciers et identitaires. Une région où les femmes sont volées, violées et tuées aux fontaines lors de la collecte de l'eau, et où les femmes souffrent le plus de l'accès limité aux ressources forestières imposé par la conservation-forteresse ou la dégradation des écosystèmes. Les femmes du Rift Albertin ont rassemblé leurs recettes pour reconstruire l'identité qu'elles avaient perdue au cours des 30 dernières années en tant que personnes déplacées à l'intérieur de leur pays à cause de la guerre qui a atteint le cœur du Bassin du Congo, en exerçant leur mémoire avec espoir et en exigeant une paix durable.",
-    "coming_soon": "Bientôt, vous pourrez trouver toutes les publications disponibles sur cette page."
+    "honda":"RITUELS CULINAIRES",
+    "honda_descr":"Rituels culinaires est un livre illustré basé sur une recherche et une exécution collectives, qui célèbre les connaissances et les pratiques des femmes de Honda, Tolima, qui se consacrent à la cuisine depuis des décennies, souvent loin de leur terre natale, et qui ont perpétué leur tradition au fil des ans, en résistant et en partageant leurs connaissances et leurs assaisonnements avec la communauté de Honda, dans le département de Tolima.",
+    "honda_link":"🔗 [ES] <a target='_blank' href='https://www.hammbredecultura.com/product-page/rituales-culinarios-saberes-y-haceres-de-las-mujeres-de-honda'>Rituales Culinarios: Saberes y haceres de las mujeres de Honda</a>",
+    "quintal":"RECETTES DU JARDIN",
+    "quintal_descr":"L'idée du livre Receitas do Quintal de Casa, écrit par das paysannes installés dans la région Novo Oriente d'Açailândia, dans le Maranhão, est née de l'expérience et de la résistance de familles qui utilisent des remèdes naturels depuis des générations. Les recettes sont préparées par des grands-mères, des mères, des prieuses et des benedeiras, qui transmettent leur savoir populaire en cultivant des plantes médicinales dans leur jardin.",
+    "quintal_link":"🔗 [PT] <a target='_blank' href='https://justicanostrilhos.org/tags/receitas-do-quintal-de-casa/'>Chás, xaropes e resistência: mulheres assentadas de Açailândia lançam livro de receitas medicinais</a>"
 }

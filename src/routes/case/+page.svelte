@@ -7,7 +7,6 @@
     import { alur } from "./alur.js";
     import { lake } from "./lake.js";
     import { _ } from "svelte-i18n";
-    
 
     let top = 0.1;
     let threshold = 0.5;
@@ -37,13 +36,15 @@
 
 <h1>{$_("caseM")}</h1>
 
-<div class="recipe-title">
-    <h1 class="highl">{$_("alur")}</h1>
-    <p>{$_("alur_descr")}</p>
-    <p class="highl">{$_("coming_soon")}</p>
+<div class="collection-box">
+    <div class="recipe-title">
+        <p style="font-size: 0.85em;">⦿ RD CONGO</p>
+        <h1 class="highl">{$_("alur")}</h1>
+        <p class="collection-descr">{$_("alur_descr")}</p>
+        <p class="highl">{$_("coming_soon")}</p>
 
-    <div style="width: 100%;height: 500px;">
-        <Map
+        <div style="width: 100%;height: 500px;">
+            <!--<Map
             options={{
                 center: [2.1690294564968156, 31.170240930168067],
                 zoom: 6,
@@ -71,17 +72,17 @@
                     },
                 }}
             />
-        </Map>
+        </Map>-->
+        </div>
     </div>
-</div>
+    <div class="recipe-title">
+        <p style="font-size: 0.85em;">⦿ UGANDA, RD CONGO, RWANDA</p>
+        <h1 class="highl">{$_("rift")}</h1>
+        <p class="collection-descr">{$_("rift_descr")}</p>
+        <p class="highl">{$_("coming_soon")}</p>
 
-<div class="recipe-title">
-    <h1 class="highl">{$_("rift")}</h1>
-    <p>{$_("rift_descr")}</p>
-    <p class="highl">{$_("coming_soon")}</p>
-
-    <div style="width: 100%;height: 500px;">
-        <Map
+        <div style="width: 100%;height: 500px;">
+            <!--<Map
             options={{
                 center: [-0.1303378807916708, 29.61986801838833],
                 zoom: 5,
@@ -109,7 +110,27 @@
                     },
                 }}
             />
-        </Map>
+        </Map>-->
+        </div>
+    </div>
+</div>
+
+<h1 style="margin-top: 3em;">{$_("caseExt")}</h1>
+<h5>{$_("caseExt_descr")}</h5>
+
+
+<div class="collection-box">
+    <div class="recipe-title">
+        <p style="font-size: 0.85em;">⦿ COLOMBIA</p>
+        <h1 class="highl">{$_("honda")}</h1>
+        <p class="collection-descr">{$_("honda_descr")}</p>
+        <p class="highl">{@html $_("honda_link")}</p>
+    </div>
+    <div class="recipe-title">
+        <p style="font-size: 0.85em;">⦿ BRAZIL</p>
+        <h1 class="highl">{$_("quintal")}</h1>
+        <p class="collection-descr">{$_("quintal_descr")}</p>
+        <p class="highl">{@html $_("quintal_link")}</p>
     </div>
 </div>
 
@@ -140,17 +161,27 @@
         padding: 1em;
         margin-top: 5em;
     }
+    .collection-box {
+        display: flex;
+    }
     .recipe-title {
         font-size: 1.2em;
         overflow: hidden;
         padding: 1em;
         border: 5px solid #ec73e8;
         border-top-right-radius: 25px;
-        margin-bottom: 2em;
+        margin: 1em;
+        max-width: 30%;
+        max-height: 36em;
+    }
+    .collection-descr {
+        min-height: 22em;
+        font-size: 0.85em;
     }
     .highl {
         color: #ec73e8;
         font-weight: 500;
+        min-height: 100px;
     }
 
     @media (max-width: 768px) {

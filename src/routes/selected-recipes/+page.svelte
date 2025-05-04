@@ -1,4 +1,6 @@
 <script>
+// @ts-nocheck
+
     import { onMount } from "svelte";
     import { base } from "$app/paths";
     import { page } from "$app/stores";
@@ -105,7 +107,10 @@
 </div>
 
 <h5>
-    *The SELECTED RECIPES section is currently published exclusively in English
+    *The SELECTED RECIPES section is currently published exclusively in English<br
+    />
+    All recipes are under <a href="https://wiki.p2pfoundation.net/Peer_Production_License" target="_blank">P2P- Peer Production Licence</a> , Attribution ShareAlike Non
+    Capitalist
 </h5>
 
 <section id="query-section">
