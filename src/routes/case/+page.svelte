@@ -123,15 +123,33 @@
 <div class="collection-box">
     <div class="recipe-title">
         <p style="font-size: 0.85em;">⦿ COLOMBIA</p>
-        <h1 class="highl">{$_("honda")}</h1>
-        <p class="collection-descr">{$_("honda_descr")}</p>
+        <h1 class="highl">{@html $_("honda")}</h1>
+        <p class="collection-descr">{@html $_("honda_descr")}</p>
         <p class="highl">{@html $_("honda_link")}</p>
     </div>
     <div class="recipe-title">
         <p style="font-size: 0.85em;">⦿ BRAZIL</p>
-        <h1 class="highl">{$_("quintal")}</h1>
-        <p class="collection-descr">{$_("quintal_descr")}</p>
+        <h1 class="highl">{@html $_("kaingang")}</h1>
+        <p class="collection-descr">{@html $_("kaingang_descr")}</p>
+        <p class="highl">{@html $_("kaingang_link")}</p>
+    </div>
+    <div class="recipe-title">
+        <p style="font-size: 0.85em;">⦿ MEXICO</p>
+        <h1 class="highl">{@html $_("campesinxs")}</h1>
+        <p class="collection-descr">{@html $_("campesinxs_descr")}</p>
+        <p class="highl">{@html $_("campesinxs_link")}</p>
+    </div>
+    <div class="recipe-title">
+        <p style="font-size: 0.85em;">⦿ BRAZIL</p>
+        <h1 class="highl">{@html $_("quintal")}</h1>
+        <p class="collection-descr">{@html $_("quintal_descr")}</p>
         <p class="highl">{@html $_("quintal_link")}</p>
+    </div>
+    <div class="recipe-title">
+        <p style="font-size: 0.85em;">⦿ KENYA</p>
+        <h1 class="highl">{@html $_("busia")}</h1>
+        <p class="collection-descr">{@html $_("busia_descr")}</p>
+        <p class="highl">{@html $_("busia_link")}</p>
     </div>
 </div>
 
@@ -166,6 +184,7 @@
     }
     .collection-box {
         display: flex;
+        flex-wrap: wrap;
     }
     .recipe-title {
         font-size: 1.2em;
@@ -174,7 +193,7 @@
         border: 5px solid #ec73e8;
         border-top-right-radius: 25px;
         margin: 1em;
-        max-width: 30%;
+        width: 30%;
         max-height: 36em;
     }
     .collection-descr {
