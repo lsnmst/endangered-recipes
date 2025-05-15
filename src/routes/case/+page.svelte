@@ -122,6 +122,12 @@
 
 <div class="collection-box">
     <div class="recipe-title">
+        <p style="font-size: 0.85em;">⦿ MEXICO</p>
+        <h1 class="highl">{@html $_("sistermilpa")}</h1>
+        <p class="collection-descr">{@html $_("sistermilpa_descr")}</p>
+        <p class="highl">{@html $_("sistermilpa_link")}</p>
+    </div>
+    <div class="recipe-title">
         <p style="font-size: 0.85em;">⦿ COLOMBIA</p>
         <h1 class="highl">{@html $_("honda")}</h1>
         <p class="collection-descr">{@html $_("honda_descr")}</p>
