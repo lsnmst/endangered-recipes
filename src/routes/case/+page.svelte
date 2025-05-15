@@ -118,39 +118,43 @@
 <h1 style="margin-top: 3em;">{$_("caseExt")}</h1>
 <h5>{$_("caseExt_descr")}</h5>
 
-
-
 <div class="collection-box">
+    <!-- SISTER OF THE MILPA -->
     <div class="recipe-title">
         <p style="font-size: 0.85em;">⦿ MEXICO</p>
         <h1 class="highl">{@html $_("sistermilpa")}</h1>
         <p class="collection-descr">{@html $_("sistermilpa_descr")}</p>
         <p class="highl">{@html $_("sistermilpa_link")}</p>
     </div>
+    
     <div class="recipe-title">
         <p style="font-size: 0.85em;">⦿ COLOMBIA</p>
         <h1 class="highl">{@html $_("honda")}</h1>
         <p class="collection-descr">{@html $_("honda_descr")}</p>
         <p class="highl">{@html $_("honda_link")}</p>
     </div>
+
     <div class="recipe-title">
         <p style="font-size: 0.85em;">⦿ BRAZIL</p>
         <h1 class="highl">{@html $_("kaingang")}</h1>
         <p class="collection-descr">{@html $_("kaingang_descr")}</p>
         <p class="highl">{@html $_("kaingang_link")}</p>
     </div>
+
     <div class="recipe-title">
         <p style="font-size: 0.85em;">⦿ MEXICO</p>
         <h1 class="highl">{@html $_("campesinxs")}</h1>
         <p class="collection-descr">{@html $_("campesinxs_descr")}</p>
         <p class="highl">{@html $_("campesinxs_link")}</p>
     </div>
+
     <div class="recipe-title">
         <p style="font-size: 0.85em;">⦿ BRAZIL</p>
         <h1 class="highl">{@html $_("quintal")}</h1>
         <p class="collection-descr">{@html $_("quintal_descr")}</p>
         <p class="highl">{@html $_("quintal_link")}</p>
     </div>
+
     <div class="recipe-title">
         <p style="font-size: 0.85em;">⦿ KENYA</p>
         <h1 class="highl">{@html $_("busia")}</h1>
@@ -158,8 +162,6 @@
         <p class="highl">{@html $_("busia_link")}</p>
     </div>
 </div>
-
-
 
 <div class="outro">
     <h1>
