@@ -40,7 +40,7 @@
     <div class="recipe-title">
         <p style="font-size: 0.85em;">⦿ RD CONGO</p>
         <h1 class="highl">{$_("alur")}</h1>
-        <p class="collection-descr">{$_("alur_descr")}</p>
+        <p class="collection-descr" style="min-height: 22em;">{$_("alur_descr")}</p>
         <p class="highl">{$_("coming_soon")}</p>
 
         <div style="width: 100%;height: 500px;">
@@ -78,7 +78,7 @@
     <div class="recipe-title">
         <p style="font-size: 0.85em;">⦿ UGANDA, RD CONGO, RWANDA</p>
         <h1 class="highl">{$_("rift")}</h1>
-        <p class="collection-descr">{$_("rift_descr")}</p>
+        <p class="collection-descr" style="min-height: 22em;">{$_("rift_descr")}</p>
         <p class="highl">{$_("coming_soon")}</p>
 
         <div style="width: 100%;height: 500px;">
@@ -121,42 +121,42 @@
 <div class="collection-box">
     <!-- SISTER OF THE MILPA -->
     <div class="recipe-title">
-        <p style="font-size: 0.85em;">⦿ MEXICO</p>
+        <p style="font-size: 0.85em;"><span>⦿ Oaxaca/New York</span><br/><span>(MEXICO/USA)</span></p>
         <h1 class="highl">{@html $_("sistermilpa")}</h1>
         <p class="collection-descr">{@html $_("sistermilpa_descr")}</p>
         <p class="highl">{@html $_("sistermilpa_link")}</p>
     </div>
-    
+
     <div class="recipe-title">
-        <p style="font-size: 0.85em;">⦿ COLOMBIA</p>
+        <p style="font-size: 0.85em;"><span>⦿ Honda, Tolima</span><br/><span>(COLOMBIA)</span></p>
         <h1 class="highl">{@html $_("honda")}</h1>
         <p class="collection-descr">{@html $_("honda_descr")}</p>
         <p class="highl">{@html $_("honda_link")}</p>
     </div>
 
     <div class="recipe-title">
-        <p style="font-size: 0.85em;">⦿ BRAZIL</p>
+        <p style="font-size: 0.85em;"><span>⦿ Aldeia Kógūnh Mág, Canela</span><br/><span>(BRAZIL)</span></p>
         <h1 class="highl">{@html $_("kaingang")}</h1>
         <p class="collection-descr">{@html $_("kaingang_descr")}</p>
         <p class="highl">{@html $_("kaingang_link")}</p>
     </div>
 
     <div class="recipe-title">
-        <p style="font-size: 0.85em;">⦿ MEXICO</p>
+        <p style="font-size: 0.85em;"><span>⦿ CDMX/Mesoamerica</span><br/><span>(MEXICO)</span></p>
         <h1 class="highl">{@html $_("campesinxs")}</h1>
         <p class="collection-descr">{@html $_("campesinxs_descr")}</p>
         <p class="highl">{@html $_("campesinxs_link")}</p>
     </div>
 
     <div class="recipe-title">
-        <p style="font-size: 0.85em;">⦿ BRAZIL</p>
+        <p style="font-size: 0.85em;"><span>⦿ Novo Oriente, Açailândia</span><br/><span>(BRAZIL)</span></p>
         <h1 class="highl">{@html $_("quintal")}</h1>
         <p class="collection-descr">{@html $_("quintal_descr")}</p>
         <p class="highl">{@html $_("quintal_link")}</p>
     </div>
 
     <div class="recipe-title">
-        <p style="font-size: 0.85em;">⦿ KENYA</p>
+        <p style="font-size: 0.85em;"><span>⦿ Busia County</span><br/><span>(KENYA)</span></p>
         <h1 class="highl">{@html $_("busia")}</h1>
         <p class="collection-descr">{@html $_("busia_descr")}</p>
         <p class="highl">{@html $_("busia_link")}</p>
@@ -205,7 +205,7 @@
         max-height: 36em;
     }
     .collection-descr {
-        min-height: 22em;
+        min-height: 19em;
         font-size: 0.85em;
     }
     .highl {
