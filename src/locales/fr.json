@@ -51,7 +51,7 @@
     "caseM": "COLLECTIONS DU RÉSEAU",
     "coming_soon": "Bientôt, vous pourrez trouver toutes les publications disponibles sur cette page.",
     "caseExt": "RECOMENDAÇÕES DE ✨ COLEÇÕES ESPALHADAS POR TODO O PLANETA",
-    "caseExt_descr":"* Ces collections n'utilisent pas le cadre de ENDANGERED RECIPES",
+    "caseExt_descr":"* Ces collections n'utilisent pas le cadre méthodologique de ENDANGERED RECIPES",
     "alur": "PEUPLE ALUR DU TERRITOIRE DE MAHAGI",
     "alur_descr": "Un territoire chroniquement tourmenté, ravagé par la violence des milices terroristes, où l'exploitation minière illégale et l'extraction incontrôlée des ressources forestières érodent les anciennes forêts primaires du bassin du Congo. Les femmes Alur se sont organisées pour sauver leurs recettes afin de défendre leur culture et leur souveraineté alimentaire, dans le cadre de leurs actions non violentes pour une paix durable.",
     "rift": "LES LACS DU RIFT ALBERTIN",
@@ -73,5 +73,8 @@
     "kaingang_link":"🔗 [PT] <a target='_blank' href='https://drive.google.com/file/d/1l6cshiHWaxn18dd2vy5uqgOZd1y7J4z7/view'>Ti Si Fag Vãjãn - Comida Dos Ancestrais Kaingang</a>",
     "sistermilpa":"LES SŒURS DE LA MILPA",
     "sistermilpa_descr":"<i>Les Sœurs de la Milpa</i>, vise à diffuser les connaissances et les pratiques indigènes, et en même temps à conceptualiser et à élargir les façons de faire de l'entraide. Dans le premier volume, <i>Ça Commence avec la Courge</i>, la chef Natalia partage des recettes qui utilisent toutes les parties de la courge à ses différents stades et nous apprend à prendre soin du sol. Dans le deuxième livre, La <i>Nostalgie du Maïs</i>, la chef Natalia partage des recettes centrées sur le maïs et nous renvoie à sa ville natale, San Miguel de Ahuehuetitlán ; elle évoque les moments de son enfance, au milieu des cultures de milpa, et décrit les leçons qu'elle a apprises de sa mère, de ses grands-mères et de ses tantes. Le dernier volume de la série s'intitule <i>Le Livre des Haricots</i>.",
-    "sistermilpa_link":"🔗 [EN] <a target='_blank' href='https://www.wordupbooks.com/WU_MILPA_EDITION_1'>It Begins with the Squash</a><br/>🔗 [EN] <a target='_blank' href='https://www.wordupbooks.com/WU_MILPA_EDITION_2'>Longing for the Corn</a><br/>🔗 [EN] <a target='_blank' href='https://www.wordupbooks.com/WU_MILPA_EDITION_3'>The Book of Beans</a>"
+    "sistermilpa_link":"🔗 [EN] <a target='_blank' href='https://www.wordupbooks.com/WU_MILPA_EDITION_1'>It Begins with the Squash</a><br/>🔗 [EN] <a target='_blank' href='https://www.wordupbooks.com/WU_MILPA_EDITION_2'>Longing for the Corn</a><br/>🔗 [EN] <a target='_blank' href='https://www.wordupbooks.com/WU_MILPA_EDITION_3'>The Book of Beans</a>",
+    "apoorna":"ANNA HE APOORNA BRAHMA",
+    "apoorna_descr":"<i>Anna He Apoorna Brahma</i> explore la culture alimentaire et l'histoire des communautés Dalits du Maharashtra, en particulier les castes Mahar et Mang. Il combine mémoires, recettes et commentaires sociaux sur l'impact de la discrimination de caste sur les pratiques culinaires.",
+    "apoorna_link":"🔗 [EN] <a target='_blank' href='https://harpercollins.co.in/product/dalit-kitchens-of-marathwada/'>Dalit Kitchens of Marathwada: Anna He Apoorna Brahma</a>"
 }
