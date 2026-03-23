@@ -34,7 +34,7 @@
     </h1>
 </div>
 
-<h1>{$_("caseM")}</h1>
+<!-- <h1>{$_("caseM")}</h1>
 
 <div class="collection-box">
     <div class="recipe-title">
@@ -46,7 +46,7 @@
         <p class="highl">{$_("coming_soon")}</p>
 
         <div style="width: 100%;height: 500px;">
-            <!--<Map
+            <Map
             options={{
                 center: [2.1690294564968156, 31.170240930168067],
                 zoom: 6,
@@ -74,7 +74,7 @@
                     },
                 }}
             />
-        </Map>-->
+        </Map>
         </div>
     </div>
     <div class="recipe-title">
@@ -86,7 +86,7 @@
         <p class="highl">{$_("coming_soon")}</p>
 
         <div style="width: 100%;height: 500px;">
-            <!--<Map
+            <Map
             options={{
                 center: [-0.1303378807916708, 29.61986801838833],
                 zoom: 5,
@@ -114,10 +114,11 @@
                     },
                 }}
             />
-        </Map>-->
+        </Map>
         </div>
     </div>
 </div>
+ -->
 
 <h1 style="margin-top: 3em;">{$_("caseExt")}</h1>
 <h5>{$_("caseExt_descr")}</h5>
